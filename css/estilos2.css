@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+.logocontenedor{
+    display: flex;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    background-color: rgb(172, 228, 238);
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    list-style-type: none;
+    margin: 10px 50px;
+}
