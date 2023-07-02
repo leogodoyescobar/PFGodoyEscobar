@@ -7,27 +7,32 @@
     font-family: "Roboto";
     src: url(../fonts/Roboto-Regular.ttf);
 }
+/*Inicio contenido pagina home*/
+/*contenido header*/
 #header{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(172, 228, 238);
 }
 .logo{
-    width: 200px;
-    height: 150px;
+    width: 140px;
+    height: 110px;
+}
+.logoymenu{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
 }
 .logocontenedor{
-    display: flex;
-    margin: 5px;
-    justify-content: center;
+    margin-left: 20px;
 }
 .menu{
     background-color: rgb(172, 228, 238);
     display: flex;
-    justify-content: center;
 }
 .menu li{
     list-style-type: none;
-    margin: 10px 50px;
+    margin: 10px 30px;
 }
 /*contenido main*/
 h1{
@@ -42,7 +47,7 @@ h1{
     
 }
 .cajaOfertas{
-    box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 10px gray;
     margin: 20px;
 }
 .imagenArticulo{
@@ -52,4 +57,93 @@ h1{
 .imagenOferta{
     height: 70px;
     width: 100px;
+}
+.cajaAdopta{
+    display: flex;
+    justify-content: center;
+    margin: 20px 5px;
+}
+.cajaAdopta img{    
+    box-shadow: 0 0 20px gray;
+}
+/*contenido footer*/
+#footer{
+    background-color: rgb(172, 228, 238);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.CajaMediosDePagos img{
+    height: 30px;
+    width: 45px;
+}
+.CajaHorariosSeguinos img{
+    height: 40px;
+    width: 40px;
+}
+.CajaMediosDePagos,
+.CajaHorariosSeguinos,
+.CajaDondeEstamos{
+    margin: 20px 50px 0px;
+}
+#footer h4{
+    margin: 10px 0px;
+}
+/*Fin contenido pagina home*/
+/*Inicio contenido pagina perros*/
+/*Contenido main*/
+.SubMainPerros{
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 40px;*/
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 350px 350px;
+    grid-template-areas: 
+    "tit tit tit"
+    "cat art art"
+    "cat art art"
+    "cat art art"
+    "cat art art"
+    ;
+}
+.TituloPaginaPerros{
+    grid-area: tit;
+}
+.seccionCategorias{
+    grid-area: cat;
+    background-color: rgb(241, 240, 240);
+    padding: 20px;
+    margin: 0px 10px 10px;
+}
+.seccionArticulos{
+    grid-area: art;
+}
+.seccionCategorias ul li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+.cajasLista{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 10px;
+    box-shadow: 0 0 10px gray;
+}
+.cajasLista img{
+    height: 180px;
+    width: 180px;
+}
+.CajaListaDescripcion{
+    display: flex;
+    width: 520px;
+    justify-content: space-between;
+    align-items: center;
+}
+.TextoDescripcion p,
+.TextoDescripcion h2{
+    margin: 20px 0px;
+}
+.BotonDescripcion{
+    margin: 50px;
 }
