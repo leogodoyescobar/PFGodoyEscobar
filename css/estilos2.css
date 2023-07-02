@@ -175,3 +175,19 @@ h1{
     background-color: rgb(89, 211, 233);
 }
 /*fin contenido pagina perros, y pagina gatos*/
+/*inicio contenido pagina nosotros*/ 
+.Nosotros{
+    display: grid;
+    text-align: center;
+}
+.AcercaNosotros{
+    margin-bottom: 20px;
+}
+.MarcasTrabajadas img{
+    height: 400px;
+    width: 900px;
+}
+.DondeEstamos,
+.DondeEstamos h3{
+    margin-bottom: 20px;
+}
