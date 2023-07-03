@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tales Petshop</title>
     <link rel="shorcut icon" href="../img/favicon.png">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
 </head>
 <body>
     <header id="header">
@@ -23,27 +23,32 @@
             </ul>
         </nav>
     </header>
-    <main id="main" class="mainContacto">
-        <div>
+    <main id="mainContacto">
+        <div class="TituloContacto">
             <h1>Envianos tu consulta</h1>
-            <form action="" class="formulario">
-                <div>
+        </div>
+        <div class="LogoContacto">
+            <img src="../img/logo2.png" alt="logo">
+        </div>
+        <div class="Formulario">            
+            <form action="../index.html">
+                <div class="ItemFormulario">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" required>
                 </div>
-                <div>
+                <div class="ItemFormulario">
                     <label for="email">email</label>
                     <input type="email" name="email" required>
                 </div>               
-                <div>
+                <div class="ItemFormulario">
                     <label for="celular">celular</label>
                     <input type="tel" name="celular" required>
                 </div>
-                <div>
+                <div class="ItemFormulario">
                     <label for="mensaje">mensaje</label>
                     <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
                 </div>
-                <div>
+                <div class="ItemFormulario">
                     <button>Enviar</button>
                 </div>                
             </form>
