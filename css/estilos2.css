@@ -79,14 +79,16 @@ h1{
 .cajaAdopta{
     display: flex;
     justify-content: center;
-    margin: 20px 5px;
-}
-.cajaAdopta img{    
-    box-shadow: 0 0 20px gray;
 }
 @media(min-width: 577px){
     .cajaAdopta2 img{
         display: none;
+    }
+    .cajaAdopta{
+        margin: 20px 0px;
+    }
+    .cajaAdopta img{    
+        box-shadow: 0 0 10px gray;
     }
 }
 @media(min-width:300px) and (max-width: 576px){
@@ -99,11 +101,12 @@ h1{
     .cajaAdopta2{
         display: flex;
         justify-content: center;
-        margin: 10px;
+        margin: 10px 0px;
     }
     .cajaAdopta2 img{
         height: 250px;
-        width: 250px;        
+        width: 250px;
+        box-shadow: 0 0 10px gray;        
     }
 }
 /*contenido footer*/
