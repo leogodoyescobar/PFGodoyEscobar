@@ -84,6 +84,28 @@ h1{
 .cajaAdopta img{    
     box-shadow: 0 0 20px gray;
 }
+@media(min-width: 577px){
+    .cajaAdopta2 img{
+        display: none;
+    }
+}
+@media(min-width:300px) and (max-width: 576px){
+    .cajaAdopta img{
+        display: none;
+    }
+    .cajaAdopta{
+        margin: 0px;
+    }
+    .cajaAdopta2{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .cajaAdopta2 img{
+        height: 250px;
+        width: 250px;        
+    }
+}
 /*contenido footer*/
 #footer{
     background-color: rgb(172, 228, 238);
