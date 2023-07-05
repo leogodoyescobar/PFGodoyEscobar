@@ -91,7 +91,7 @@ h1{
         box-shadow: 0 0 10px gray;
     }
 }
-@media(min-width:300px) and (max-width: 576px){
+@media(max-width: 576px){
     .cajaAdopta img{
         display: none;
     }
@@ -135,27 +135,66 @@ h1{
 /*Fin contenido pagina home*/
 /*Inicio contenido pagina perros, y pagina gatos*/
 /*Contenido main*/
-.SubMainGatos,
-.SubMainPerros{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 200px 350px 350px;
-    grid-template-areas: 
-    "tit tit tit"
-    "cat art art"
-    "cat art art"
-    "cat art art"
-    "cat art art"
-    ;
+@media(min-width: 577px){
+    .SubMainGatos,
+    .SubMainPerros{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 200px 350px 350px;
+        grid-template-areas: 
+        "tit tit tit"
+        "cat art art"
+        "cat art art"
+        "cat art art"
+        "cat art art"
+        ;
+    }
+    .seccionCategorias{
+        grid-area: cat;
+        padding: 20px;
+        margin: 0px 10px 10px;
+    }
+    .cajasLista{
+        display: flex;
+        margin: 0px 10px 10px;
+    }
+    .cajasLista img{
+        height: 180px;
+        width: 180px;
+    }
+    .CajaListaDescripcion{
+        display: flex;
+        align-items: center;
+    }
+    .BotonDescripcion{
+        margin: 50px;
+    }
+}
+@media(max-width: 576px){
+    .seccionCategorias{
+        margin: 10px;
+        padding: 5px;
+    }
+    .cajasLista{        
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .cajasLista img{
+        height: 180px;
+        width: 180px;
+    }
+    .BotonDescripcion{
+        margin: 10px;
+    }
 }
 .TituloPagina{
     grid-area: tit;
 }
 .seccionCategorias{
-    grid-area: cat;
     background-color: rgb(241, 240, 240);
-    padding: 20px;
-    margin: 0px 10px 10px;
 }
 .seccionArticulos{
     grid-area: art;
@@ -168,27 +207,11 @@ h1{
     text-decoration: none;
 }
 .cajasLista{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 10px 10px;
     box-shadow: 0 0 10px gray;
-}
-.cajasLista img{
-    height: 180px;
-    width: 180px;
-}
-.CajaListaDescripcion{
-    display: flex;
-    width: 520px;
-    justify-content: space-between;
-    align-items: center;
 }
 .TextoDescripcion p,
 .TextoDescripcion h2{
     margin: 20px 0px;
-}
-.BotonDescripcion{
-    margin: 50px;
 }
 .BotonDescripcion button{
     width: 100px;
@@ -254,4 +277,34 @@ h1{
 .ItemFormulario{
     display: grid;
     margin: 5px 0px;
+}
+/*Contenido pagina alimento perros y gatos*/
+@media(min-width: 577px){
+    .alimento2{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 180px;
+        padding: 40px;
+    }
+    .alimento2 div p,
+    .alimento2 div h3{
+        margin: 20px;
+    }
+    .cuadrofotodescripcion,
+    .cuadrodescripcionprecio{
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        padding: 20px;
+    }
+    .BotonComprar button{
+        width: 150px;
+        height: 25px;
+        background-color: rgb(172, 228, 238);
+        border: 1px solid rgb(172, 228, 238);
+        border-radius: 5px;
+    }    
+.imagenOferta2{
+    height: 60px;
+    width: 90px;
 }
