@@ -304,7 +304,8 @@ h1{
         border: 1px solid rgb(172, 228, 238);
         border-radius: 5px;
     }    
-.imagenOferta2{
+    .imagenOferta2{
     height: 60px;
     width: 90px;
+    }
 }
