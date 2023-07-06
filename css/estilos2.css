@@ -337,37 +337,9 @@ h1{
         margin: 5px;
     }
 }
-/* #mainContacto{
-    display: grid;   
-    justify-content: center;
-    grid-template-columns: 400px 400px;
-    grid-template-areas: 
-    "Tit Tit"
-    "Log For"
-    ;
-    margin-top: 20px;
-    margin-bottom: 70px;
-}
-.TituloContacto{
-    grid-area: Tit;
-    justify-self: center;
-}*/
 .LogoContacto{
     grid-area: Log;
 }
-
-/* .Formulario{
-    margin: 20px 0px;
-    width: 400px;
-}
-.Formulario{
-    grid-area: For;
-    display: grid;
-}
-.ItemFormulario{
-    display: grid;
-    margin: 5px 0px;
-} */
 /*Contenido pagina alimento perros y gatos*/
 @media(min-width: 577px){
     .alimento2{
@@ -397,5 +369,43 @@ h1{
     .imagenOferta2{
     height: 60px;
     width: 90px;
+    }
+}
+@media(max-width: 576px){
+    .imagenOferta2{
+        height: 50px;
+        width: 80px;
+    }
+    .alimento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .alimento2{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px gray;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    .cuadrofotodescripcion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuadrodescripcionprecio{
+        text-align: center;
+    }
+    .cuadrodescripcionprecio h3,
+    .cuadrodescripcionprecio p{
+        margin: 5px;
+    }
+    .BotonComprar button{
+        margin-bottom: 5px;
+        width: 150px;
+        height: 25px;
+        background-color: rgb(172, 228, 238);
+        border: 1px solid rgb(172, 228, 238);
+        border-radius: 5px;
     }
 }
