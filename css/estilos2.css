@@ -275,7 +275,69 @@ h1{
 }
 /*fin contenido pagina nosotros*/
 /*inicio contenido pagina contacto*/
-#mainContacto{
+@media(min-width: 577px){
+    #mainContacto{
+        display: grid;   
+        justify-content: center;
+        grid-template-columns: 400px 400px;
+        grid-template-areas: 
+        "Tit Tit"
+        "Log For"
+        ;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    .TituloContacto{
+        grid-area: Tit;
+        justify-self: center;
+    }
+    .Formulario{
+        margin: 20px 0px;
+        width: 400px;
+    }
+    .Formulario{
+        grid-area: For;
+        display: grid;
+    }
+    .ItemFormulario{
+        display: grid;
+        margin: 5px 0px;
+    }
+}
+@media(max-width: 576px){
+    #mainContacto{
+        display: flex;
+        flex-direction: column;        
+    }
+    .LogoContacto{
+        display: flex;
+        justify-content: center;
+    }
+    .LogoContacto img{
+        height: 180px;
+        width: 180px;
+    }
+    .TituloContacto h1{
+        text-align: center;
+    }
+    .Formulario2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Formulario2 .TextArea{
+        width: 173px;
+    }
+    .ItemFormulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .ItemFormulario button{
+        margin: 5px;
+    }
+}
+/* #mainContacto{
     display: grid;   
     justify-content: center;
     grid-template-columns: 400px 400px;
@@ -289,12 +351,12 @@ h1{
 .TituloContacto{
     grid-area: Tit;
     justify-self: center;
-}
+}*/
 .LogoContacto{
     grid-area: Log;
 }
-.TituloContacto,
-.Formulario{
+
+/* .Formulario{
     margin: 20px 0px;
     width: 400px;
 }
@@ -305,7 +367,7 @@ h1{
 .ItemFormulario{
     display: grid;
     margin: 5px 0px;
-}
+} */
 /*Contenido pagina alimento perros y gatos*/
 @media(min-width: 577px){
     .alimento2{
