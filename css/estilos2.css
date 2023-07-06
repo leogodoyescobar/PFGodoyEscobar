@@ -235,11 +235,37 @@ h1{
 .AcercaNosotros{
     margin-bottom: 20px;
 }
-.MarcasTrabajadas img{
-    height: 400px;
-    width: 900px;
-    box-shadow: 0 0 10px gray;
-    margin-top: 10px;
+@media(min-width: 577px){
+    .MarcasTrabajadas2 img{
+        display: none;
+    }
+    .MarcasTrabajadas img{
+        height: 400px;
+        width: 900px;
+        box-shadow: 0 0 10px gray;
+        margin-top: 10px;
+    }
+}
+@media(max-width: 576px){
+    .Nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .MarcasTrabajadas img{
+        display: none;
+    }
+    .MarcasTrabajadas h3{
+        margin-bottom: 10px;
+    }
+    .MarcasTrabajadas2 img{
+        height: 520px;
+        width: 300px;
+        box-shadow: 0 0 10px gray;
+    }
+    .DondeEstamos iframe{
+        height: 200px;
+        width: 250px;
+    }
 }
 .DondeEstamos{
     margin: 10px;
