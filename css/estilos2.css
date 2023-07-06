@@ -14,6 +14,9 @@ dl, ol, ul {
 ol, ul {
     padding-left: 0;
 }
+.ofertaoff{
+    display: none;
+}
 /*Inicio contenido pagina home*/
 /*contenido header*/
 #header{
