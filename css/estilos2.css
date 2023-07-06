@@ -1,11 +1,18 @@
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-@font-face{
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
+}
+dl, ol, ul {
+    margin-bottom: 0;
+}
+ol, ul {
+    padding-left: 0;
 }
 /*Inicio contenido pagina home*/
 /*contenido header*/
@@ -37,6 +44,20 @@
 .menu li a{
     text-decoration: none;
 }
+@media(min-width: 577px){
+    #logoymenu ul li{
+        margin: 0px 20px;
+        background-color: rgb(172, 228, 238);
+    }
+    #logoymenu{
+    background-color: rgb(172, 228, 238) !important;
+    }
+}
+@media(max-width: 576px){    
+    #logoymenu{
+        background-color: rgb(172, 228, 238) !important;
+    }
+}
 /*contenido main*/
 h1{
     margin-top: 20px;
@@ -47,7 +68,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 .cajaOfertas{
     display: flex;
@@ -87,7 +108,7 @@ h1{
     .cajaAdopta{
         margin: 20px 0px;
     }
-    .cajaAdopta img{    
+    .cajaAdopta img{
         box-shadow: 0 0 10px gray;
     }
 }
@@ -106,7 +127,7 @@ h1{
     .cajaAdopta2 img{
         height: 250px;
         width: 250px;
-        box-shadow: 0 0 10px gray;        
+        box-shadow: 0 0 10px gray;
     }
 }
 /*contenido footer*/
@@ -141,7 +162,7 @@ h1{
         display: grid;
         justify-content: center;
         grid-template-columns: 200px 350px 350px;
-        grid-template-areas: 
+        grid-template-areas:
         "tit tit tit"
         "cat art art"
         "cat art art"
@@ -177,7 +198,7 @@ h1{
         margin: 10px;
         padding: 5px;
     }
-    .cajasLista{        
+    .cajasLista{
         display: flex;
         flex-direction: column;
         margin: 10px;
@@ -227,7 +248,7 @@ h1{
     cursor: pointer;
 }
 /*fin contenido pagina perros, y pagina gatos*/
-/*inicio contenido pagina nosotros*/ 
+/*inicio contenido pagina nosotros*/
 .Nosotros{
     display: grid;
     text-align: center;
@@ -277,10 +298,10 @@ h1{
 /*inicio contenido pagina contacto*/
 @media(min-width: 577px){
     #mainContacto{
-        display: grid;   
+        display: grid;
         justify-content: center;
         grid-template-columns: 400px 400px;
-        grid-template-areas: 
+        grid-template-areas:
         "Tit Tit"
         "Log For"
         ;
@@ -307,7 +328,7 @@ h1{
 @media(max-width: 576px){
     #mainContacto{
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
     }
     .LogoContacto{
         display: flex;
@@ -365,7 +386,7 @@ h1{
         background-color: rgb(172, 228, 238);
         border: 1px solid rgb(172, 228, 238);
         border-radius: 5px;
-    }    
+    }
     .imagenOferta2{
     height: 60px;
     width: 90px;
