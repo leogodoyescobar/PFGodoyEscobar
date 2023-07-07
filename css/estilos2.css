@@ -47,7 +47,7 @@ ol, ul {
 .menu li a{
     text-decoration: none;
 }
-@media(min-width: 577px){
+@media(min-width: 768px){
     #logoymenu ul li{
         margin: 0px 20px;
         background-color: rgb(172, 228, 238);
@@ -56,7 +56,7 @@ ol, ul {
     background-color: rgb(172, 228, 238) !important;
     }
 }
-@media(max-width: 576px){    
+@media(max-width: 767px){    
     #logoymenu{
         background-color: rgb(172, 228, 238) !important;
     }
@@ -104,7 +104,7 @@ h1{
     display: flex;
     justify-content: center;
 }
-@media(min-width: 577px){
+@media(min-width: 768px){
     .cajaAdopta2 img{
         display: none;
     }
@@ -115,7 +115,7 @@ h1{
         box-shadow: 0 0 10px gray;
     }
 }
-@media(max-width: 576px){
+@media(max-width: 767px){
     .cajaAdopta img{
         display: none;
     }
@@ -159,7 +159,7 @@ h1{
 /*Fin contenido pagina home*/
 /*Inicio contenido pagina perros, y pagina gatos*/
 /*Contenido main*/
-@media(min-width: 577px){
+@media(min-width: 768px){
     .SubMainGatos,
     .SubMainPerros{
         display: grid;
@@ -196,7 +196,7 @@ h1{
         margin: 50px;
     }
 }
-@media(max-width: 576px){
+@media(max-width: 767px){
     .seccionCategorias{
         margin: 10px;
         padding: 5px;
@@ -252,7 +252,7 @@ h1{
 }
 /*fin contenido pagina perros, y pagina gatos*/
 /*contenido accesorios perros y gatos*/
-@media(min-width: 577px){
+@media(min-width: 768px){
     #mainPerrosAcc{
         margin-bottom: 330px;
     }
@@ -266,7 +266,7 @@ h1{
         margin-bottom: 10px;
     }
 }
-@media(max-width: 576px){
+@media(max-width: 767px){
     .SubMainPerros .seccionArticulos{
         display: flex;
         flex-direction: column;
@@ -295,7 +295,7 @@ h1{
 .AcercaNosotros{
     margin-bottom: 20px;
 }
-@media(min-width: 577px){
+@media(min-width: 768px){
     .MarcasTrabajadas2 img{
         display: none;
     }
@@ -306,7 +306,7 @@ h1{
         margin-top: 10px;
     }
 }
-@media(max-width: 576px){
+@media(max-width: 767px){
     .Nosotros{
         display: flex;
         flex-direction: column;
@@ -335,7 +335,7 @@ h1{
 }
 /*fin contenido pagina nosotros*/
 /*inicio contenido pagina contacto*/
-@media(min-width: 577px){
+@media(min-width: 768px){
     #mainContacto{
         display: grid;
         justify-content: center;
@@ -364,7 +364,7 @@ h1{
         margin: 5px 0px;
     }
 }
-@media(max-width: 576px){
+@media(max-width: 767px){
     #mainContacto{
         display: flex;
         flex-direction: column;
@@ -401,7 +401,7 @@ h1{
     grid-area: Log;
 }
 /*Contenido pagina alimento perros y gatos*/
-@media(min-width: 577px){
+@media(min-width: 768px){
     .alimento2{
         display: flex;
         justify-content: center;
@@ -431,7 +431,7 @@ h1{
     width: 90px;
     }
 }
-@media(max-width: 576px){
+@media(max-width: 767px){
     .imagenOferta2{
         height: 50px;
         width: 80px;
