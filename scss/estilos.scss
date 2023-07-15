@@ -431,9 +431,11 @@ h1{
                 border: 1px solid rgb(172, 228, 238);
                 border-radius: 5px;
                 }
-                button:hover{
+                &:hover{
+                    button{
                     background-color: rgb(89, 211, 233);
                     cursor: pointer;
+                    }
                 }
             }
         }
