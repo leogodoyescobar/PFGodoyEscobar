@@ -414,6 +414,10 @@ h1 {
     border: 1px solid rgb(172, 228, 238);
     border-radius: 5px;
   }
+  .alimento2 .cuadrodescripcionprecio .BotonComprar button:hover {
+    background-color: rgb(89, 211, 233);
+    cursor: pointer;
+  }
 }
 @media (max-width: 767px) {
   .alimento {
@@ -454,6 +458,10 @@ h1 {
     background-color: rgb(172, 228, 238);
     border: 1px solid rgb(172, 228, 238);
     border-radius: 5px;
+  }
+  .alimento .alimento2 .cuadrodescripcionprecio .BotonComprar button:hover {
+    background-color: rgb(89, 211, 233);
+    cursor: pointer;
   }
 }
 

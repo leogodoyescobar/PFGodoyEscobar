@@ -423,13 +423,19 @@ h1{
             p, h3{
                 margin: 20px;
             }            
-            .BotonComprar button{
+            .BotonComprar{
+                button{
                 width: 150px;
                 height: 25px;
                 background-color: rgb(172, 228, 238);
                 border: 1px solid rgb(172, 228, 238);
                 border-radius: 5px;
-            }                
+                }
+                button:hover{
+                    background-color: rgb(89, 211, 233);
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
@@ -462,14 +468,20 @@ h1{
                 h3, p{
                     margin: 5px;
                 }
-                .BotonComprar button{
+                .BotonComprar{
+                    button{
                     margin-bottom: 5px;
                     width: 150px;
                     height: 25px;
                     background-color: rgb(172, 228, 238);
                     border: 1px solid rgb(172, 228, 238);
                     border-radius: 5px;
-                }
+                    }
+                    button:hover{
+                        background-color: rgb(89, 211, 233);
+                        cursor: pointer;
+                    }
+                } 
             }    
         }
     }    
