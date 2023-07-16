@@ -5,7 +5,7 @@
 }
 .ItemFormulario{
     button{
-        @extend .atributos-botones;
+        @extend %atributos-botones;
     }
 }
 @media(min-width: 768px){

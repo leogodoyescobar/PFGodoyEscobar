@@ -3,7 +3,7 @@
     button{
         height: 25px;
         width: 150px;                    
-        @extend .atributos-botones;
+        @extend %atributos-botones;
     }
 }
 .imagenArticulo{

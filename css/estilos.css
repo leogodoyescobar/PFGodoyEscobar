@@ -13,17 +13,12 @@
   display: none;
 }
 
-.ImagenArtVentaOferta {
-  height: 230px;
-  width: 250px;
-}
-
-.atributos-botones, .BotonComprar button, .ItemFormulario button, .accvolver button, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button, .seccionCajaOfertas .cajaOfertas div button {
+.BotonComprar button, .ItemFormulario button, .accvolver button, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button, .seccionCajaOfertas .cajaOfertas div button {
   background-color: rgb(172, 228, 238);
   border: 1px solid rgb(172, 228, 238);
   border-radius: 5px;
 }
-.atributos-botones:hover, .BotonComprar button:hover, .ItemFormulario button:hover, .accvolver button:hover, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover, .seccionCajaOfertas .cajaOfertas div button:hover {
+.BotonComprar button:hover, .ItemFormulario button:hover, .accvolver button:hover, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover, .seccionCajaOfertas .cajaOfertas div button:hover {
   background-color: rgb(89, 211, 233);
   cursor: pointer;
 }
