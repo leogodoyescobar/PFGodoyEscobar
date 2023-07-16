@@ -425,17 +425,15 @@ h1{
             }            
             .BotonComprar{
                 button{
-                width: 150px;
-                height: 25px;
-                background-color: rgb(172, 228, 238);
-                border: 1px solid rgb(172, 228, 238);
-                border-radius: 5px;
-                }
-                &:hover{
-                    button{
-                    background-color: rgb(89, 211, 233);
-                    cursor: pointer;
-                    }
+                    width: 150px;
+                    height: 25px;
+                    background-color: rgb(172, 228, 238);
+                    border: 1px solid rgb(172, 228, 238);
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: rgb(89, 211, 233);
+                        cursor: pointer;
+                    }                
                 }
             }
         }
@@ -478,10 +476,10 @@ h1{
                     background-color: rgb(172, 228, 238);
                     border: 1px solid rgb(172, 228, 238);
                     border-radius: 5px;
-                    }
-                    button:hover{
-                        background-color: rgb(89, 211, 233);
-                        cursor: pointer;
+                        &:hover{
+                            background-color: rgb(89, 211, 233);
+                            cursor: pointer;
+                        }
                     }
                 } 
             }    

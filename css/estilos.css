@@ -414,7 +414,7 @@ h1 {
     border: 1px solid rgb(172, 228, 238);
     border-radius: 5px;
   }
-  .alimento2 .cuadrodescripcionprecio .BotonComprar:hover button {
+  .alimento2 .cuadrodescripcionprecio .BotonComprar button:hover {
     background-color: rgb(89, 211, 233);
     cursor: pointer;
   }
