@@ -1,0 +1,23 @@
+// contenido footer
+#footer{
+    background-color: $color-primario;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h4{
+        margin: 10px 0px;
+    }
+    .CajaMediosDePagos img{
+        height: 30px;
+        width: 45px;
+    }
+    .CajaHorariosSeguinos img{
+        height: 40px;
+        width: 40px;
+    }
+    .CajaMediosDePagos,
+    .CajaHorariosSeguinos,
+    .CajaDondeEstamos{
+        margin: 20px 50px 0px;
+    }
+}

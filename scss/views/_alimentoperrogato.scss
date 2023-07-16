@@ -1,0 +1,93 @@
+// Contenido estilo pagina alimento perros y gatos
+// Vista desktop
+@media(min-width: 768px){
+    .alimento2{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 160px;
+        padding: 40px;
+        .cuadrofotodescripcion{
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+            padding: 20px;
+            .imagenArticulo{
+                height: 230px;
+                width: 250px;
+            }
+            .imagenOferta2{
+                height: 60px;
+                width: 90px;
+            }
+        }
+        .cuadrodescripcionprecio{
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+            padding: 20px;
+            p, h3{
+                margin: 20px;
+            }            
+            .BotonComprar{
+                button{
+                    width: 150px;
+                    height: 25px;
+                    background-color: $color-primario;
+                    border: 1px solid $color-primario;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: $hover-boton;
+                        cursor: pointer;
+                    }                
+                }
+            }
+        }
+    }
+}
+// Vista mobile
+@media(max-width: 767px){    
+    .alimento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .alimento2{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 10px gray;
+            width: 250px;
+            margin-bottom: 10px;
+            .cuadrofotodescripcion{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .imagenArticulo{
+                    height: 230px;
+                    width: 250px;
+                }
+                .imagenOferta2{
+                    height: 50px;
+                    width: 80px;
+                }
+            }
+            .cuadrodescripcionprecio{
+                text-align: center;
+                h3, p{
+                    margin: 5px;
+                }
+                .BotonComprar{
+                    button{
+                        margin-bottom: 5px;
+                        width: 150px;
+                        height: 25px;
+                        background-color: $color-primario;
+                        border: 1px solid $color-primario;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: $hover-boton;
+                            cursor: pointer;
+                        }
+                    }
+                } 
+            }    
+        }
+    }    
+}

@@ -1,0 +1,13 @@
+// contenido header
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-primario;
+    .logocontenedor{
+        margin-left: 20px;
+        .logo{
+            width: 140px;
+            height: 110px;
+        }
+    }
+}

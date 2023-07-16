@@ -13,8 +13,6 @@
   display: none;
 }
 
-/*Inicio contenido pagina home*/
-/*contenido header*/
 #header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +26,29 @@
   height: 110px;
 }
 
-/*contenido main*/
+#footer {
+  background-color: rgb(172, 228, 238);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#footer h4 {
+  margin: 10px 0px;
+}
+#footer .CajaMediosDePagos img {
+  height: 30px;
+  width: 45px;
+}
+#footer .CajaHorariosSeguinos img {
+  height: 40px;
+  width: 40px;
+}
+#footer .CajaMediosDePagos,
+#footer .CajaHorariosSeguinos,
+#footer .CajaDondeEstamos {
+  margin: 20px 50px 0px;
+}
+
 h1 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -102,31 +122,6 @@ h1 {
     box-shadow: 0 0 10px gray;
   }
 }
-/*contenido footer*/
-#footer {
-  background-color: rgb(172, 228, 238);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#footer h4 {
-  margin: 10px 0px;
-}
-#footer .CajaMediosDePagos img {
-  height: 30px;
-  width: 45px;
-}
-#footer .CajaHorariosSeguinos img {
-  height: 40px;
-  width: 40px;
-}
-#footer .CajaMediosDePagos,
-#footer .CajaHorariosSeguinos,
-#footer .CajaDondeEstamos {
-  margin: 20px 50px 0px;
-}
-
-/*Contenido main pagina perros y pagina gatos*/
 @media (min-width: 768px) {
   .SubMainGatos,
   .SubMainGatosAcc,
@@ -216,7 +211,6 @@ h1 {
   cursor: pointer;
 }
 
-/*contenido main accesorios perros y gatos*/
 @media (min-width: 768px) {
   #mainGatosAcc,
   #mainPerrosAcc {
@@ -256,7 +250,6 @@ h1 {
   cursor: pointer;
 }
 
-/*Contenido main pagina nosotros*/
 .Nosotros {
   display: grid;
   text-align: center;
@@ -306,7 +299,6 @@ h1 {
     width: 250px;
   }
 }
-/*Contenido main pagina contacto*/
 @media (min-width: 768px) {
   #mainContacto {
     display: grid;
@@ -385,7 +377,6 @@ h1 {
   grid-area: Log;
 }
 
-/*Contenido pagina alimento perros y gatos*/
 @media (min-width: 768px) {
   .alimento2 {
     display: flex;

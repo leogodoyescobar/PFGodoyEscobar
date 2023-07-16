@@ -1,0 +1,85 @@
+// Contenido estilos pagina contacto
+// Vista desktop
+@media(min-width: 768px){
+    #mainContacto{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 400px 400px;
+        grid-template-areas:
+        "Tit Tit"
+        "Log For"
+        ;
+        margin-top: 20px;
+        margin-bottom: 70px;
+        .TituloContacto{
+            grid-area: Tit;
+            justify-self: center;
+        }    
+        .Formulario{
+            grid-area: For;
+            display: grid;
+            margin: 20px 0px;
+            width: 400px;
+            .ItemFormulario{
+                display: grid;
+                margin: 5px 0px;
+                button{
+                    background-color: $color-primario;
+                    border: 1px solid $color-primario;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: $hover-boton;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }    
+}
+// Vista mobile
+@media(max-width: 767px){
+    #mainContacto{
+        display: flex;
+        flex-direction: column;
+        .TituloContacto h1{
+            text-align: center;
+        }
+        .LogoContacto{
+            display: flex;
+            justify-content: center;
+            img{
+                height: 180px;
+                width: 180px;
+            }
+        }    
+        .Formulario{
+            .Formulario2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .TextArea{
+                    width: 182px;
+                }
+                .ItemFormulario{
+                    display: flex;
+                    flex-direction: column;
+                    button{
+                        background-color: $color-primario;
+                        border: 1px solid $color-primario;
+                        border-radius: 5px;
+                        margin: 5px;
+                        width: 182px;
+                        &:hover{
+                            background-color: $hover-boton;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }    
+        }
+    }    
+}
+.LogoContacto{
+    grid-area: Log;
+}

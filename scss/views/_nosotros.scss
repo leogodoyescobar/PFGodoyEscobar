@@ -1,0 +1,54 @@
+// Contenido estilos pagina nosotros
+.Nosotros{
+    display: grid;
+    text-align: center;
+    .AcercaNosotros{
+        margin-bottom: 20px;
+    }
+    .DondeEstamos{
+        margin: 10px;
+        h3{
+            margin-bottom: 10px;
+        }
+    }
+}
+// Vista desktop
+@media(min-width: 768px){
+    .MarcasTrabajadas2 img{
+        display: none;
+    }
+    .MarcasTrabajadas img{
+        height: 400px;
+        width: 900px;
+        box-shadow: 0 0 10px gray;
+        margin-top: 10px;
+    }
+}
+// Vista mobile
+@media(max-width: 767px){
+    .Nosotros{
+        display: flex;
+        flex-direction: column;
+        .AcercaNosotros p{
+            margin-bottom: 0;
+        }
+        .MarcasTrabajadas{
+            img{
+                display: none;
+            }
+            h3{
+                margin-bottom: 10px;
+            }
+        }
+        .MarcasTrabajadas2 img{
+            height: 520px;
+            width: 300px;
+            box-shadow: 0 0 10px gray;
+        }
+        .DondeEstamos iframe{
+            height: 200px;
+            width: 250px;
+        }
+    }
+    
+}

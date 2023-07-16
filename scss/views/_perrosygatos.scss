@@ -1,0 +1,107 @@
+// Contenido estilos pagina perros y pagina gatos
+// Vista desktop
+@media(min-width: 768px){
+    .SubMainGatos,
+    .SubMainGatosAcc,
+    .SubMainPerrosAcc,
+    .SubMainPerros{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 200px 350px 350px;
+        grid-template-areas:
+        "tit tit tit"
+        "cat art art"
+        "cat art art"
+        "cat art art"
+        "cat art art"
+        ;
+    }
+    .seccionCategorias{
+        grid-area: cat;
+        padding: 20px;
+        margin: 0px 10px 10px;
+    }
+    .cajasLista{
+        display: flex;
+        margin: 0px 10px 10px;
+        .CajalistaImagen{
+            img{
+                height: 180px;
+                width: 180px;
+            }
+        }
+        .CajaListaDescripcion{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            .BotonDescripcion{
+                margin: 50px;
+            }
+        }    
+    }    
+}
+// Vista mobile
+@media(max-width: 767px){
+    .seccionCategorias{
+        margin: 10px;
+        padding: 5px;
+    }
+    .cajasLista{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        text-align: center;
+        .CajalistaImagen{
+            img{
+                height: 180px;
+                width: 180px;
+            }
+        }
+        .CajaListaDescripcion{
+            .BotonDescripcion{
+                margin: 10px;
+            }
+        }
+    }    
+}
+.TituloPagina{
+    grid-area: tit;
+}
+.seccionCategorias{
+    background-color: rgb(241, 240, 240);
+    .cajaCategorias ul li{
+        list-style-type: none;
+        margin-left: 10px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.seccionArticulos{
+    grid-area: art;
+    .cajasLista{
+        box-shadow: 0 0 10px gray;
+        .CajaListaDescripcion{
+            .TextoDescripcion{
+                p, h2{
+                    margin: 20px 0px;
+                }
+            }
+            .BotonDescripcion{
+                button{
+                    width: 100px;
+                    height: 25px;
+                    background-color: $color-primario;
+                    border: 1px solid $color-primario;
+                    border-radius: 5px;
+                }
+                button:hover{
+                    background-color: $hover-boton;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
