@@ -335,6 +335,10 @@ h1 {
     border: 1px solid rgb(172, 228, 238);
     border-radius: 5px;
   }
+  #mainContacto .Formulario .ItemFormulario button:hover {
+    background-color: rgb(89, 211, 233);
+    cursor: pointer;
+  }
 }
 @media (max-width: 767px) {
   #mainContacto {
@@ -371,6 +375,10 @@ h1 {
     border-radius: 5px;
     margin: 5px;
     width: 182px;
+  }
+  #mainContacto .Formulario .Formulario2 .ItemFormulario button:hover {
+    background-color: rgb(89, 211, 233);
+    cursor: pointer;
   }
 }
 .LogoContacto {
