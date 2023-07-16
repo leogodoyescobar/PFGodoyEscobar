@@ -1,19 +1,5 @@
-@font-face{
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto";
-}
-.ofertaoff{
-    display: none;
-}
-// Variables
-$color-primario: rgb(172, 228, 238);
-$hover-boton: rgb(89, 211, 233);
+@import 'base/generales';
+@import 'variables';
 
 /*Inicio contenido pagina home*/
 /*contenido header*/
