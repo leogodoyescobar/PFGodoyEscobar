@@ -1,4 +1,14 @@
 // Contenido estilo pagina alimento perros y gatos
+.BotonComprar{
+    button{
+        height: 25px;
+        width: 150px;                    
+        @extend .atributos-botones;
+    }
+}
+.imagenArticulo{
+    @include Imagen-Articulo(250px, 230px)
+}
 // Vista desktop
 @media(min-width: 768px){
     .alimento2{
@@ -8,38 +18,25 @@
         margin-bottom: 160px;
         padding: 40px;
         .cuadrofotodescripcion{
-            box-shadow: 0 0 10px gray;
+            box-shadow: $sombrasbox;
             text-align: center;
             padding: 20px;
-            .imagenArticulo{
-                height: 230px;
-                width: 250px;
-            }
+            height: 280px;
+            width: 385px;
             .imagenOferta2{
                 height: 60px;
                 width: 90px;
             }
         }
         .cuadrodescripcionprecio{
-            box-shadow: 0 0 10px gray;
+            box-shadow: $sombrasbox;
             text-align: center;
             padding: 20px;
+            height: 280px;
+            width: 620px;
             p, h3{
                 margin: 20px;
             }            
-            .BotonComprar{
-                button{
-                    width: 150px;
-                    height: 25px;
-                    background-color: map-get($color-fondos, primary);
-                    border: 1px solid map-get($color-fondos, primary);
-                    border-radius: 5px;
-                    &:hover{
-                        background-color: map-get($color-fondos, secondary);
-                        cursor: pointer;
-                    }                
-                }
-            }
         }
     }
 }
@@ -52,17 +49,13 @@
         .alimento2{
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 10px gray;
+            box-shadow: $sombrasbox;
             width: 250px;
             margin-bottom: 10px;
             .cuadrofotodescripcion{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                .imagenArticulo{
-                    height: 230px;
-                    width: 250px;
-                }
                 .imagenOferta2{
                     height: 50px;
                     width: 80px;
@@ -76,15 +69,6 @@
                 .BotonComprar{
                     button{
                         margin-bottom: 5px;
-                        width: 150px;
-                        height: 25px;
-                        background-color: map-get($color-fondos, primary);
-                        border: 1px solid map-get($color-fondos, primary);
-                        border-radius: 5px;
-                        &:hover{
-                            background-color: map-get($color-fondos, secondary);
-                            cursor: pointer;
-                        }
                     }
                 } 
             }    

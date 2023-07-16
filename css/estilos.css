@@ -13,6 +13,21 @@
   display: none;
 }
 
+.ImagenArtVentaOferta {
+  height: 230px;
+  width: 250px;
+}
+
+.atributos-botones, .BotonComprar button, .ItemFormulario button, .accvolver button, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button, .seccionCajaOfertas .cajaOfertas div button {
+  background-color: rgb(172, 228, 238);
+  border: 1px solid rgb(172, 228, 238);
+  border-radius: 5px;
+}
+.atributos-botones:hover, .BotonComprar button:hover, .ItemFormulario button:hover, .accvolver button:hover, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover, .seccionCajaOfertas .cajaOfertas div button:hover {
+  background-color: rgb(89, 211, 233);
+  cursor: pointer;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -68,8 +83,8 @@ h1 {
   margin: 20px;
 }
 .seccionCajaOfertas .cajaOfertas .imagenArticulo {
-  height: 230px;
   width: 250px;
+  height: 230px;
 }
 .seccionCajaOfertas .cajaOfertas .imagenOferta {
   height: 70px;
@@ -77,15 +92,8 @@ h1 {
 }
 .seccionCajaOfertas .cajaOfertas div button {
   margin: 5px 0px;
-  width: 100px;
   height: 25px;
-  background-color: rgb(172, 228, 238);
-  border: 1px solid rgb(172, 228, 238);
-  border-radius: 5px;
-}
-.seccionCajaOfertas .cajaOfertas div button:hover {
-  background-color: rgb(89, 211, 233);
-  cursor: pointer;
+  width: 100px;
 }
 
 .cajaAdopta {
@@ -122,59 +130,11 @@ h1 {
     box-shadow: 0 0 10px gray;
   }
 }
-@media (min-width: 768px) {
-  .SubMainGatos,
-  .SubMainGatosAcc,
-  .SubMainPerrosAcc,
-  .SubMainPerros {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 200px 350px 350px;
-    grid-template-areas: "tit tit tit" "cat art art" "cat art art" "cat art art" "cat art art";
-  }
-  .seccionCategorias {
-    grid-area: cat;
-    padding: 20px;
-    margin: 0px 10px 10px;
-  }
-  .cajasLista {
-    display: flex;
-    margin: 0px 10px 10px;
-  }
-  .cajasLista .CajalistaImagen img {
-    height: 180px;
-    width: 180px;
-  }
-  .cajasLista .CajaListaDescripcion {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .cajasLista .CajaListaDescripcion .BotonDescripcion {
-    margin: 50px;
-  }
+.CajalistaImagen img {
+  width: 180px;
+  height: 180px;
 }
-@media (max-width: 767px) {
-  .seccionCategorias {
-    margin: 10px;
-    padding: 5px;
-  }
-  .cajasLista {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    align-items: center;
-    text-align: center;
-  }
-  .cajasLista .CajalistaImagen img {
-    height: 180px;
-    width: 180px;
-  }
-  .cajasLista .CajaListaDescripcion .BotonDescripcion {
-    margin: 10px;
-  }
-}
+
 .TituloPagina {
   grid-area: tit;
 }
@@ -200,17 +160,55 @@ h1 {
   margin: 20px 0px;
 }
 .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button {
-  width: 100px;
   height: 25px;
-  background-color: rgb(172, 228, 238);
-  border: 1px solid rgb(172, 228, 238);
-  border-radius: 5px;
-}
-.seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover {
-  background-color: rgb(89, 211, 233);
-  cursor: pointer;
+  width: 100px;
 }
 
+@media (min-width: 768px) {
+  .SubMainGatos,
+  .SubMainGatosAcc,
+  .SubMainPerrosAcc,
+  .SubMainPerros {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 350px 350px;
+    grid-template-areas: "tit tit tit" "cat art art" "cat art art" "cat art art" "cat art art";
+  }
+  .seccionCategorias {
+    grid-area: cat;
+    padding: 20px;
+    margin: 0px 10px 10px;
+  }
+  .cajasLista {
+    display: flex;
+    margin: 0px 10px 10px;
+  }
+  .cajasLista .CajaListaDescripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .cajasLista .CajaListaDescripcion .BotonDescripcion {
+    margin: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .seccionCategorias {
+    margin: 10px;
+    padding: 5px;
+  }
+  .cajasLista {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .cajasLista .CajaListaDescripcion .BotonDescripcion {
+    margin: 10px;
+  }
+}
 @media (min-width: 768px) {
   #mainGatosAcc,
   #mainPerrosAcc {
@@ -239,15 +237,8 @@ h1 {
   }
 }
 .accvolver button {
-  width: 100px;
   height: 25px;
-  background-color: rgb(172, 228, 238);
-  border: 1px solid rgb(172, 228, 238);
-  border-radius: 5px;
-}
-.accvolver button:hover {
-  background-color: rgb(89, 211, 233);
-  cursor: pointer;
+  width: 100px;
 }
 
 .Nosotros {
@@ -299,6 +290,10 @@ h1 {
     width: 250px;
   }
 }
+.LogoContacto {
+  grid-area: Log;
+}
+
 @media (min-width: 768px) {
   #mainContacto {
     display: grid;
@@ -321,15 +316,6 @@ h1 {
   #mainContacto .Formulario .ItemFormulario {
     display: grid;
     margin: 5px 0px;
-  }
-  #mainContacto .Formulario .ItemFormulario button {
-    background-color: rgb(172, 228, 238);
-    border: 1px solid rgb(172, 228, 238);
-    border-radius: 5px;
-  }
-  #mainContacto .Formulario .ItemFormulario button:hover {
-    background-color: rgb(89, 211, 233);
-    cursor: pointer;
   }
 }
 @media (max-width: 767px) {
@@ -362,19 +348,18 @@ h1 {
     flex-direction: column;
   }
   #mainContacto .Formulario .Formulario2 .ItemFormulario button {
-    background-color: rgb(172, 228, 238);
-    border: 1px solid rgb(172, 228, 238);
-    border-radius: 5px;
     margin: 5px;
     width: 182px;
   }
-  #mainContacto .Formulario .Formulario2 .ItemFormulario button:hover {
-    background-color: rgb(89, 211, 233);
-    cursor: pointer;
-  }
 }
-.LogoContacto {
-  grid-area: Log;
+.BotonComprar button {
+  height: 25px;
+  width: 150px;
+}
+
+.imagenArticulo {
+  width: 250px;
+  height: 230px;
 }
 
 @media (min-width: 768px) {
@@ -389,10 +374,8 @@ h1 {
     box-shadow: 0 0 10px gray;
     text-align: center;
     padding: 20px;
-  }
-  .alimento2 .cuadrofotodescripcion .imagenArticulo {
-    height: 230px;
-    width: 250px;
+    height: 280px;
+    width: 385px;
   }
   .alimento2 .cuadrofotodescripcion .imagenOferta2 {
     height: 60px;
@@ -402,20 +385,11 @@ h1 {
     box-shadow: 0 0 10px gray;
     text-align: center;
     padding: 20px;
+    height: 280px;
+    width: 620px;
   }
   .alimento2 .cuadrodescripcionprecio p, .alimento2 .cuadrodescripcionprecio h3 {
     margin: 20px;
-  }
-  .alimento2 .cuadrodescripcionprecio .BotonComprar button {
-    width: 150px;
-    height: 25px;
-    background-color: rgb(172, 228, 238);
-    border: 1px solid rgb(172, 228, 238);
-    border-radius: 5px;
-  }
-  .alimento2 .cuadrodescripcionprecio .BotonComprar button:hover {
-    background-color: rgb(89, 211, 233);
-    cursor: pointer;
   }
 }
 @media (max-width: 767px) {
@@ -436,10 +410,6 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-  .alimento .alimento2 .cuadrofotodescripcion .imagenArticulo {
-    height: 230px;
-    width: 250px;
-  }
   .alimento .alimento2 .cuadrofotodescripcion .imagenOferta2 {
     height: 50px;
     width: 80px;
@@ -452,15 +422,6 @@ h1 {
   }
   .alimento .alimento2 .cuadrodescripcionprecio .BotonComprar button {
     margin-bottom: 5px;
-    width: 150px;
-    height: 25px;
-    background-color: rgb(172, 228, 238);
-    border: 1px solid rgb(172, 228, 238);
-    border-radius: 5px;
-  }
-  .alimento .alimento2 .cuadrodescripcionprecio .BotonComprar button:hover {
-    background-color: rgb(89, 211, 233);
-    cursor: pointer;
   }
 }
 

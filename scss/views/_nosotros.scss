@@ -20,7 +20,7 @@
     .MarcasTrabajadas img{
         height: 400px;
         width: 900px;
-        box-shadow: 0 0 10px gray;
+        box-shadow: $sombrasbox;
         margin-top: 10px;
     }
 }
@@ -43,7 +43,7 @@
         .MarcasTrabajadas2 img{
             height: 520px;
             width: 300px;
-            box-shadow: 0 0 10px gray;
+            box-shadow: $sombrasbox;
         }
         .DondeEstamos iframe{
             height: 200px;

@@ -10,8 +10,7 @@ h1{
     justify-content: center;
     .cajaOfertas{
         .imagenArticulo{
-            height: 230px;
-            width: 250px;
+            @include Imagen-Articulo(250px, 230px)
         }
         .imagenOferta{
             height: 70px;
@@ -20,19 +19,13 @@ h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0 0 10px gray;
+        box-shadow: $sombrasbox;
         margin: 20px;
         div button{
             margin: 5px 0px;
-            width: 100px;
             height: 25px;
-            background-color: map-get($color-fondos, primary);
-            border: 1px solid map-get($color-fondos, primary);
-            border-radius: 5px;
-        }
-        div button:hover{
-            background-color: map-get($color-fondos, secondary);
-            cursor: pointer;
+            width: 100px;            
+            @extend .atributos-botones;
         }
     }
 }
@@ -48,7 +41,7 @@ h1{
     .cajaAdopta{
         margin: 20px 0px;
         img{
-            box-shadow: 0 0 10px gray;
+            box-shadow: $sombrasbox;
         }
     }
 }
@@ -67,7 +60,7 @@ h1{
         img{
             height: 250px;
             width: 250px;
-            box-shadow: 0 0 10px gray;
+            box-shadow: $sombrasbox;
         }
     }
 }

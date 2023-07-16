@@ -1,5 +1,43 @@
 // Contenido estilos pagina perros y pagina gatos
 // Vista desktop
+.CajalistaImagen{
+    img{
+        @include Imagen-Articulo(180px, 180px)
+    }
+}
+.TituloPagina{
+    grid-area: tit;
+}
+.seccionCategorias{
+    background-color: rgb(241, 240, 240);
+    .cajaCategorias ul li{
+        list-style-type: none;
+        margin-left: 10px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.seccionArticulos{
+    grid-area: art;
+    .cajasLista{
+        box-shadow: $sombrasbox;
+        .CajaListaDescripcion{
+            .TextoDescripcion{
+                p, h2{
+                    margin: 20px 0px;
+                }
+            }
+            .BotonDescripcion{
+                button{
+                    height: 25px;
+                    width: 100px;                    
+                    @extend .atributos-botones;
+                }
+            }
+        }
+    }
+}
 @media(min-width: 768px){
     .SubMainGatos,
     .SubMainGatosAcc,
@@ -24,12 +62,6 @@
     .cajasLista{
         display: flex;
         margin: 0px 10px 10px;
-        .CajalistaImagen{
-            img{
-                height: 180px;
-                width: 180px;
-            }
-        }
         .CajaListaDescripcion{
             display: flex;
             align-items: center;
@@ -53,55 +85,10 @@
         margin: 10px;
         align-items: center;
         text-align: center;
-        .CajalistaImagen{
-            img{
-                height: 180px;
-                width: 180px;
-            }
-        }
         .CajaListaDescripcion{
             .BotonDescripcion{
                 margin: 10px;
             }
         }
     }    
-}
-.TituloPagina{
-    grid-area: tit;
-}
-.seccionCategorias{
-    background-color: rgb(241, 240, 240);
-    .cajaCategorias ul li{
-        list-style-type: none;
-        margin-left: 10px;
-        a{
-            text-decoration: none;
-        }
-    }
-}
-.seccionArticulos{
-    grid-area: art;
-    .cajasLista{
-        box-shadow: 0 0 10px gray;
-        .CajaListaDescripcion{
-            .TextoDescripcion{
-                p, h2{
-                    margin: 20px 0px;
-                }
-            }
-            .BotonDescripcion{
-                button{
-                    width: 100px;
-                    height: 25px;
-                    background-color: map-get($color-fondos, primary);
-                    border: 1px solid map-get($color-fondos, primary);
-                    border-radius: 5px;
-                }
-                button:hover{
-                    background-color: map-get($color-fondos, secondary);
-                    cursor: pointer;
-                }
-            }
-        }
-    }
 }

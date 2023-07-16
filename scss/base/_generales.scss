@@ -12,3 +12,22 @@
 .ofertaoff{
     display: none;
 }
+// imagenes de articulos para aplicar @extend
+.ImagenArtVentaOferta{
+    height: 230px;
+    width: 250px;
+}
+@mixin Imagen-Articulo($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+// atributos botones
+.atributos-botones{
+    background-color: map-get($color-fondos, primary);
+    border: 1px solid map-get($color-fondos, primary);
+    border-radius: 5px;
+    &:hover{
+        background-color: map-get($color-fondos, secondary);
+        cursor: pointer;
+    }           
+}
