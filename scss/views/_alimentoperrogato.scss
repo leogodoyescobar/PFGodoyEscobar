@@ -31,11 +31,11 @@
                 button{
                     width: 150px;
                     height: 25px;
-                    background-color: $color-primario;
-                    border: 1px solid $color-primario;
+                    background-color: map-get($color-fondos, primary);
+                    border: 1px solid map-get($color-fondos, primary);
                     border-radius: 5px;
                     &:hover{
-                        background-color: $hover-boton;
+                        background-color: map-get($color-fondos, secondary);
                         cursor: pointer;
                     }                
                 }
@@ -78,11 +78,11 @@
                         margin-bottom: 5px;
                         width: 150px;
                         height: 25px;
-                        background-color: $color-primario;
-                        border: 1px solid $color-primario;
+                        background-color: map-get($color-fondos, primary);
+                        border: 1px solid map-get($color-fondos, primary);
                         border-radius: 5px;
                         &:hover{
-                            background-color: $hover-boton;
+                            background-color: map-get($color-fondos, secondary);
                             cursor: pointer;
                         }
                     }

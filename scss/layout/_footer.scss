@@ -1,6 +1,6 @@
 // contenido footer
 #footer{
-    background-color: $color-primario;
+    background-color: map-get($color-fondos, primary);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

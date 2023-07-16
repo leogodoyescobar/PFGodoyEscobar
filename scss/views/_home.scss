@@ -26,12 +26,12 @@ h1{
             margin: 5px 0px;
             width: 100px;
             height: 25px;
-            background-color: $color-primario;
-            border: 1px solid $color-primario;
+            background-color: map-get($color-fondos, primary);
+            border: 1px solid map-get($color-fondos, primary);
             border-radius: 5px;
         }
         div button:hover{
-            background-color: $hover-boton;
+            background-color: map-get($color-fondos, secondary);
             cursor: pointer;
         }
     }
