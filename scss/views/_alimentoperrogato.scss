@@ -15,24 +15,25 @@
         display: flex;
         justify-content: center;
         margin-top: 50px;
-        margin-bottom: 160px;
+        margin-bottom: 100px;
         padding: 40px;
         .cuadrofotodescripcion{
-            box-shadow: $sombrasbox;
-            text-align: center;
-            padding: 20px;
-            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $sombrasbox;            
+            height: 290px;
             width: 385px;
             .imagenOferta2{
                 height: 60px;
                 width: 90px;
+                transform: rotate(10deg);
             }
         }
         .cuadrodescripcionprecio{
             box-shadow: $sombrasbox;
             text-align: center;
-            padding: 20px;
-            height: 280px;
+            height: 290px;
             width: 620px;
             p, h3{
                 margin: 20px;

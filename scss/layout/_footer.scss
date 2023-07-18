@@ -1,6 +1,6 @@
 // contenido footer
 #footer{
-    background-color: map-get($color-fondos, primary);
+    background: linear-gradient(map-get($color-fondos, primary),map-get($color-fondos, secondary));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,6 +10,7 @@
     .CajaMediosDePagos img{
         height: 30px;
         width: 45px;
+        margin-top: 5px;
     }
     .CajaHorariosSeguinos img{
         height: 40px;

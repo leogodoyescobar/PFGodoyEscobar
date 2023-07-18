@@ -12,12 +12,12 @@
 .ofertaoff{
     display: none;
 }
-// imagenes de articulos para aplicar mixin
+// mixin
 @mixin Imagen-Articulo($ancho, $alto){
     width: $ancho;
     height: $alto;
 }
-// atributos botones para aplicar extend
+// extend
 %atributos-botones{
     background-color: map-get($color-fondos, primary);
     border: 1px solid map-get($color-fondos, primary);

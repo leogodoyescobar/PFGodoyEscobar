@@ -18,7 +18,7 @@
         "Log For"
         ;
         margin-top: 20px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
         .TituloContacto{
             grid-area: Tit;
             justify-self: center;
@@ -40,6 +40,7 @@
     #mainContacto{
         display: flex;
         flex-direction: column;
+        margin-bottom: 10px;
         .TituloContacto h1{
             text-align: center;
         }
