@@ -361,16 +361,13 @@ h1 {
     align-items: center;
     justify-content: center;
   }
-  #mainContacto .Formulario .Formulario2 .TextArea {
-    width: 182px;
-  }
   #mainContacto .Formulario .Formulario2 .ItemFormulario {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
   #mainContacto .Formulario .Formulario2 .ItemFormulario button {
     margin: 5px;
-    width: 182px;
   }
 }
 .BotonComprar button {
