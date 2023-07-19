@@ -221,14 +221,20 @@ h1 {
   .cajasLista {
     display: flex;
     flex-direction: column;
-    margin: 10px;
     align-items: center;
     text-align: center;
+    margin: 10px;
   }
   .cajasLista .CajaListaDescripcion .BotonDescripcion {
     margin: 10px;
   }
 }
+.seccionArticulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   #mainGatosAcc,
   #mainPerrosAcc {
@@ -237,9 +243,6 @@ h1 {
   #mainGatosAcc .SubMainPerrosAcc .seccionArticulos, #mainGatosAcc .SubMainGatosAcc .seccionArticulos,
   #mainPerrosAcc .SubMainPerrosAcc .seccionArticulos,
   #mainPerrosAcc .SubMainGatosAcc .seccionArticulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-shadow: 0 0 10px gray;
     row-gap: 60px;
     padding: 10px;
@@ -248,9 +251,6 @@ h1 {
 }
 @media (max-width: 767px) {
   .SubMainPerrosAcc .seccionArticulos, .SubMainGatosAcc .seccionArticulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0px 5px 10px 5px;
     padding: 5px;
     box-shadow: 0 0 10px gray;
