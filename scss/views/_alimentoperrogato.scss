@@ -31,12 +31,15 @@
             }
         }
         .cuadrodescripcionprecio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             box-shadow: $sombrasbox;
             text-align: center;
             height: 290px;
             width: 620px;
             p, h3{
-                margin: 20px;
+                margin: 10px 20px;
             }            
         }
     }

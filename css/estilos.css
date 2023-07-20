@@ -402,13 +402,16 @@ h1 {
     transform: rotate(10deg);
   }
   .alimento2 .cuadrodescripcionprecio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-shadow: 0 0 10px gray;
     text-align: center;
     height: 290px;
     width: 620px;
   }
   .alimento2 .cuadrodescripcionprecio p, .alimento2 .cuadrodescripcionprecio h3 {
-    margin: 20px;
+    margin: 10px 20px;
   }
 }
 @media (max-width: 767px) {
