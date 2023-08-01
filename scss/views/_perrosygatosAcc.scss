@@ -1,20 +1,36 @@
 // Contenido estilos accesorios perros y gatos
-.seccionArticulos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.SubMainGatosAcc,
+.SubMainPerrosAcc{
+    .TituloPagina{        
+    }
+    .seccionCategorias{
+        background-color: rgb(241, 240, 240);
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .seccionArticulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 // Vista desktop
 @media(min-width: 768px){
     #mainGatosAcc,
     #mainPerrosAcc{
         margin-bottom: 330px;
-        .SubMainPerrosAcc, .SubMainGatosAcc{
+        .SubMainPerrosAcc,
+        .SubMainGatosAcc{
+            margin: 50px;
             .seccionArticulos{
                 box-shadow: $sombrasbox;
                 row-gap: 60px;
                 padding: 10px;
                 margin-bottom: 10px;
+                
             }
         }
     }    
@@ -22,6 +38,12 @@
 // Vista mobile
 @media(max-width: 767px){
     .SubMainPerrosAcc, .SubMainGatosAcc{
+        .seccionCategorias{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 5px;
+        }
         .seccionArticulos{
             margin: 0px 5px 10px 5px;
             padding: 5px;

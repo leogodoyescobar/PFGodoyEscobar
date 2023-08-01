@@ -30,12 +30,14 @@
   display: none;
 }
 
-.BotonComprar button, .ItemFormulario button, .accvolver button, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button, .seccionCajaOfertas .cajaOfertas div button {
+.BotonComprar button, .ItemFormulario button, .accvolver button, .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button,
+.ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button, .seccionCajaOfertas .cajaOfertas div button {
   background-color: rgb(172, 228, 238);
   border: 1px solid rgb(172, 228, 238);
   border-radius: 5px;
 }
-.BotonComprar button:hover, .ItemFormulario button:hover, .accvolver button:hover, .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover, .seccionCajaOfertas .cajaOfertas div button:hover {
+.BotonComprar button:hover, .ItemFormulario button:hover, .accvolver button:hover, .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover,
+.ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover, .seccionCajaOfertas .cajaOfertas div button:hover {
   background-color: rgb(89, 211, 233);
   cursor: pointer;
 }
@@ -166,83 +168,139 @@ h1 {
   height: 180px;
 }
 
-.TituloPagina {
-  grid-area: tit;
-}
-
-.seccionCategorias {
+.ContenidoPerros .seccionCategorias,
+.ContenidoGatos .seccionCategorias {
   background-color: rgb(241, 240, 240);
 }
-.seccionCategorias .cajaCategorias ul li {
+.ContenidoPerros .seccionCategorias .submenu,
+.ContenidoGatos .seccionCategorias .submenu {
   list-style-type: none;
-  margin-left: 10px;
 }
-.seccionCategorias .cajaCategorias ul li a {
+.ContenidoPerros .seccionCategorias .submenu a,
+.ContenidoGatos .seccionCategorias .submenu a {
   text-decoration: none;
 }
-
-.seccionArticulos {
-  grid-area: art;
-}
-.seccionArticulos .cajasLista {
+.ContenidoPerros .seccionArticulos .cajasLista,
+.ContenidoGatos .seccionArticulos .cajasLista {
   box-shadow: 0 0 10px gray;
 }
-.seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion p, .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion h2 {
-  margin: 20px 0px;
+.ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion p, .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion h2,
+.ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion p,
+.ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion h2 {
+  margin: 10px 0px;
 }
-.seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button {
+.ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button,
+.ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button {
   height: 25px;
   width: 100px;
 }
 
-@media (min-width: 991px) {
-  .SubMainGatos,
-  .SubMainGatosAcc,
-  .SubMainPerrosAcc,
-  .SubMainPerros {
-    display: grid;
+@media (min-width: 992px) {
+  .ContenidoPerros,
+  .ContenidoGatos {
     justify-content: center;
-    grid-template-columns: 200px 350px 350px;
-    grid-template-areas: "tit tit tit" "cat art art" "cat art art" "cat art art" "cat art art";
   }
-  .seccionCategorias {
-    grid-area: cat;
-    padding: 20px;
-    margin: 0px 10px 10px;
+  .ContenidoPerros .seccionCategorias,
+  .ContenidoGatos .seccionCategorias {
+    margin: 10px;
+    margin-top: 0px;
+    max-width: 210px;
   }
-  .cajasLista {
+  .ContenidoPerros .seccionArticulos,
+  .ContenidoGatos .seccionArticulos {
+    align-items: normal;
+  }
+  .ContenidoPerros .seccionArticulos .cajasLista,
+  .ContenidoGatos .seccionArticulos .cajasLista {
     display: flex;
-    margin: 0px 10px 10px;
+    margin-bottom: 10px;
+    max-width: 720px;
   }
-  .cajasLista .CajaListaDescripcion {
+  .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion,
+  .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    width: 500px;
   }
-  .cajasLista .CajaListaDescripcion .BotonDescripcion {
-    margin: 50px;
+  .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion,
+  .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion {
+    margin-right: 20px;
+  }
+  .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion,
+  .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion {
+    margin: 10px;
   }
 }
-@media (max-width: 767px) {
-  .seccionCategorias {
-    margin: 10px;
-    padding: 5px;
+@media (min-width: 577px) and (max-width: 991px) {
+  .ContenidoPerros,
+  .ContenidoGatos {
+    justify-content: center;
+    margin: 10px 0px;
   }
-  .cajasLista {
-    width: 320px;
+  .ContenidoPerros .seccionCategorias,
+  .ContenidoGatos .seccionCategorias {
+    margin-bottom: 10px;
+    padding: 0;
+    max-width: 160px;
+  }
+  .ContenidoPerros .seccionArticulos .cajasLista,
+  .ContenidoGatos .seccionArticulos .cajasLista {
+    display: flex;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion,
+  .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion,
+  .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .TextoDescripcion {
+    margin: 0px 10px;
+  }
+  .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion,
+  .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion {
+    margin: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .ContenidoPerros,
+  .ContenidoGatos {
+    display: flex;
+    justify-content: center;
+  }
+  .ContenidoPerros .seccionCategorias,
+  .ContenidoGatos .seccionCategorias {
+    width: 95%;
+    margin: 5px;
+  }
+  .ContenidoPerros .seccionArticulos .cajasLista,
+  .ContenidoGatos .seccionArticulos .cajasLista {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 10px;
-    padding: 0px 5px;
+    margin: 10px 0px;
   }
-  .cajasLista .CajaListaDescripcion .BotonDescripcion {
+  .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion,
+  .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion {
     margin: 10px;
   }
 }
-.seccionArticulos {
+.SubMainGatosAcc .seccionCategorias,
+.SubMainPerrosAcc .seccionCategorias {
+  background-color: rgb(241, 240, 240);
+}
+.SubMainGatosAcc .seccionCategorias ul li,
+.SubMainPerrosAcc .seccionCategorias ul li {
+  list-style: none;
+}
+.SubMainGatosAcc .seccionArticulos,
+.SubMainPerrosAcc .seccionArticulos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +311,14 @@ h1 {
   #mainPerrosAcc {
     margin-bottom: 330px;
   }
-  #mainGatosAcc .SubMainPerrosAcc .seccionArticulos, #mainGatosAcc .SubMainGatosAcc .seccionArticulos,
+  #mainGatosAcc .SubMainPerrosAcc,
+  #mainGatosAcc .SubMainGatosAcc,
+  #mainPerrosAcc .SubMainPerrosAcc,
+  #mainPerrosAcc .SubMainGatosAcc {
+    margin: 50px;
+  }
+  #mainGatosAcc .SubMainPerrosAcc .seccionArticulos,
+  #mainGatosAcc .SubMainGatosAcc .seccionArticulos,
   #mainPerrosAcc .SubMainPerrosAcc .seccionArticulos,
   #mainPerrosAcc .SubMainGatosAcc .seccionArticulos {
     box-shadow: 0 0 10px gray;
@@ -263,6 +328,12 @@ h1 {
   }
 }
 @media (max-width: 767px) {
+  .SubMainPerrosAcc .seccionCategorias, .SubMainGatosAcc .seccionCategorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+  }
   .SubMainPerrosAcc .seccionArticulos, .SubMainGatosAcc .seccionArticulos {
     margin: 0px 5px 10px 5px;
     padding: 5px;
