@@ -12,6 +12,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        .accvolver{
+            button{
+                height: 25px;
+                width: 100px;
+                @extend %atributos-botones;
+            }
+        }        
     }
 }
 // Vista desktop
@@ -44,14 +51,7 @@
         .seccionArticulos{
             margin: 0px 5px 10px 5px;
             padding: 5px;
-            box-shadow: $sombrasbox;
-            .accvolver{
-                button{
-                    height: 25px;
-                    width: 100px;        
-                    @extend %atributos-botones;
-                }
-            }
+            box-shadow: $sombrasbox;            
         }
     }
 }

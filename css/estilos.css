@@ -30,13 +30,13 @@
   display: none;
 }
 
-.BotonComprar button, .ItemFormulario button, .accvolver button, .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button,
+.BotonComprar button, .ItemFormulario button, .SubMainGatosAcc .seccionArticulos .accvolver button, .SubMainPerrosAcc .seccionArticulos .accvolver button, .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button,
 .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button, .seccionCajaOfertas .cajaOfertas div button {
   background-color: rgb(172, 228, 238);
   border: 1px solid rgb(172, 228, 238);
   border-radius: 5px;
 }
-.BotonComprar button:hover, .ItemFormulario button:hover, .accvolver button:hover, .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover,
+.BotonComprar button:hover, .ItemFormulario button:hover, .SubMainGatosAcc .seccionArticulos .accvolver button:hover, .SubMainPerrosAcc .seccionArticulos .accvolver button:hover, .ContenidoPerros .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover,
 .ContenidoGatos .seccionArticulos .cajasLista .CajaListaDescripcion .BotonDescripcion button:hover, .seccionCajaOfertas .cajaOfertas div button:hover {
   background-color: rgb(89, 211, 233);
   cursor: pointer;
@@ -291,19 +291,20 @@ h1 {
     margin: 10px;
   }
 }
-.SubMainGatosAcc .seccionCategorias,
-.SubMainPerrosAcc .seccionCategorias {
+.SubMainGatosAcc .seccionCategorias, .SubMainPerrosAcc .seccionCategorias {
   background-color: rgb(241, 240, 240);
 }
-.SubMainGatosAcc .seccionCategorias ul li,
-.SubMainPerrosAcc .seccionCategorias ul li {
+.SubMainGatosAcc .seccionCategorias ul li, .SubMainPerrosAcc .seccionCategorias ul li {
   list-style: none;
 }
-.SubMainGatosAcc .seccionArticulos,
-.SubMainPerrosAcc .seccionArticulos {
+.SubMainGatosAcc .seccionArticulos, .SubMainPerrosAcc .seccionArticulos {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.SubMainGatosAcc .seccionArticulos .accvolver button, .SubMainPerrosAcc .seccionArticulos .accvolver button {
+  height: 25px;
+  width: 100px;
 }
 
 @media (min-width: 768px) {
@@ -340,11 +341,6 @@ h1 {
     box-shadow: 0 0 10px gray;
   }
 }
-.accvolver button {
-  height: 25px;
-  width: 100px;
-}
-
 .Nosotros {
   display: grid;
   text-align: center;
@@ -359,7 +355,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .MarcasTrabajadas2 img {
     display: none;
   }
@@ -370,7 +366,31 @@ h1 {
     margin-top: 10px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 991px) {
+  .Nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .Nosotros .AcercaNosotros p {
+    margin-bottom: 0;
+  }
+  .Nosotros .MarcasTrabajadas2 img {
+    display: none;
+  }
+  .Nosotros .MarcasTrabajadas2 h3 {
+    margin-bottom: 10px;
+  }
+  .Nosotros .MarcasTrabajadas img {
+    height: 80%;
+    width: 80%;
+    box-shadow: 0 0 10px gray;
+  }
+  .Nosotros .DondeEstamos iframe {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
   .Nosotros {
     display: flex;
     flex-direction: column;
