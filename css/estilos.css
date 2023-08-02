@@ -136,6 +136,8 @@ h1 {
   }
   .cajaAdopta img {
     box-shadow: 0 0 10px gray;
+    height: 80%;
+    width: 80%;
   }
   .cajaOfertas .imagenOferta {
     animation-name: animacionoferta;
