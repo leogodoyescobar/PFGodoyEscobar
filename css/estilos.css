@@ -379,9 +379,6 @@ h1 {
   .Nosotros .MarcasTrabajadas2 img {
     display: none;
   }
-  .Nosotros .MarcasTrabajadas2 h3 {
-    margin-bottom: 10px;
-  }
   .Nosotros .MarcasTrabajadas img {
     height: 80%;
     width: 80%;
@@ -402,9 +399,6 @@ h1 {
   }
   .Nosotros .MarcasTrabajadas img {
     display: none;
-  }
-  .Nosotros .MarcasTrabajadas h3 {
-    margin-bottom: 10px;
   }
   .Nosotros .MarcasTrabajadas2 img {
     height: 520px;
